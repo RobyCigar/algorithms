@@ -2,4 +2,5 @@
 
 void MyClass::foo()
 {
+	
 }
