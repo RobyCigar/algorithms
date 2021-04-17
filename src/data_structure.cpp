@@ -46,9 +46,8 @@ int main(int argc, char const *argv[])
 	// 	cout << v[i] << "\n";
 	// }
 
-	string name = "rabih";
-	name += " utomo";
-	cout << name << '\n';
+	vector<int> v(10, 5);
+	cout << v << '\n';
 
 	return 0;
 }
