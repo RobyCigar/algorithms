@@ -29,3 +29,6 @@ The choice of which set implementation to use is often a matter of taste. The
 benefit of the set structure is that it maintains the order of the elements and
 provides functions that are not available in unordered_set . On the other hand,
 unordered_set can be more efficient.
+
+#### *.hpp vs *.h
+https://stackoverflow.com/questions/152555/h-or-hpp-for-your-class-definitions
