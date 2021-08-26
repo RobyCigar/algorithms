@@ -1,10 +1,10 @@
-src = toki
+src = src 
 
 compile:
 	cd $(src) && g++ -o output index.cpp && ./output
 
 test: build.cpp
-	cd $(src) && ./output < input.txt
+	cd $(src) && ./output < input.txt > output.txt
 
 build.cpp:
 	cd $(src) && g++ -o output index.cpp 
