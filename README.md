@@ -31,4 +31,18 @@ provides functions that are not available in unordered_set . On the other hand,
 unordered_set can be more efficient.
 
 #### *.hpp vs *.h
-https://stackoverflow.com/questions/152555/h-or-hpp-for-your-class-definitions
+https://stackoverflow.com/questions/152555/h-or-hpp-for-your-class-definitions 
+
+
+#### printf format
+
+* %d integer
+* %p pointer location
+* %x hex
+* %s string
+* %lf float
+* %f float
+
+## Using g++, you can use the -I option to specify an alternate include directory.
+
+g++ -o main -I/source/includes main.cpp
