@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "echo",
+            "label": "Eksekusi memakai input.txt file",
             "type": "shell",
             "command": [
                 "clang++ -Wall",
@@ -21,6 +21,23 @@
                 "kind": "build",
                 "isDefault": true
             }
-        }
+        },
+        {
+            "label": "Eksekusi tidak memakai input.txt file",
+            "type": "shell",
+            "command": [
+                "clang++ -Wall",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out",
+                "&&",
+                "${fileDirname}/${fileBasenameNoExtension}.out"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
     ]
 }
