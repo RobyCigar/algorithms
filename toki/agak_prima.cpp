@@ -3,38 +3,35 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-    int a, n;
+    int N;
+    scanf("%d", &N);
 
-    cin >> n;
+    while(N--) {
+        int x;
+        scanf("%d", &x);
+        bool agakprima = true;
+        int factor = 0;
 
-    for (int i = 0; i < n; i++) {
-        cin >> a;
-        bool prime = true;
-        int agak = 0;
-        for(int j = 2; j*j <= a; j++) {
-            if(a % j == 0) {
-                prime = false;
-                break;
+        for(int i=2; i*i <= x; i++) { 
+        // i = 2, 3, 4, 5, 6, ...
+            if(i*i == x) {
+                factor++;
+            } else if(x % i == 0) {
+                factor += 2;
             }
         }
 
-        for(int j = 2; j*j <= a; j++) {
-            if(a % j == 0) {
-                agak += 1;
-                break;
-            }
-
-            if(agak > 1) {
-                break;
-            }
-        }
-
-        if((agak == 1) || (prime == true)) {
-            cout << "YA" << endl;
+        if(factor <= 2) {
+            agakprima = true;
         } else {
-            cout << "BUKAN" << endl;
+            agakprima = false;
         }
 
+        if(agakprima) {
+            printf("YA\n");
+        } else {
+            printf("BUKAN\n");
+        }
     }
     return 0;
 }

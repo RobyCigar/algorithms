@@ -1,4 +1,4 @@
-## Tempatku Belajar Algorithms, Data Structure, CPP, dan hopefully CP
+## Tempatku Belajar Algorithms, Data Structure, CPP, dan Competitive Programming
 
 ### `My Useful Notes:`
 
@@ -43,6 +43,9 @@ https://stackoverflow.com/questions/152555/h-or-hpp-for-your-class-definitions
 * %lf float
 * %f float
 
-## Using g++, you can use the -I option to specify an alternate include directory.
+#### Using g++, you can use the -I option to specify an alternate include directory.
 
 g++ -o main -I/source/includes main.cpp
+
+#### Cara ngeimport file/function
+https://stackoverflow.com/questions/15891781/how-to-call-on-a-function-found-on-another-file

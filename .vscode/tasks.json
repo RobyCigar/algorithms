@@ -14,7 +14,9 @@
                 "&&",
                 "${fileDirname}/${fileBasenameNoExtension}.out",
                 "<",
-                "${fileDirname}/${fileBasenameNoExtension}.txt"
+                "${fileDirname}/${fileBasenameNoExtension}.txt",
+                "&&",
+                "rm ${fileDirname}/${fileBasenameNoExtension}.out"
             ],
             "problemMatcher": [],
             "group": {
@@ -31,7 +33,9 @@
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.out",
                 "&&",
-                "${fileDirname}/${fileBasenameNoExtension}.out"
+                "${fileDirname}/${fileBasenameNoExtension}.out",
+                "&&",
+                "rm ${fileDirname}/${fileBasenameNoExtension}.out"
             ],
             "problemMatcher": [],
             "group": {
