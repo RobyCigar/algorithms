@@ -1,6 +1,16 @@
-## Tempatku Belajar Algorithms, Data Structure, CPP, dan Competitive Programming
+# Tempatku Belajar Algorithms, Data Structure, CPP, dan Competitive Programming
 
-### `My Useful Notes:`
+## `Sumber Belajar dan Bookmark`
+
+* https://codeforces.com/blog/entry/57282
+* https://www.geeksforgeeks.org/how-to-prepare-for-acm-icpc/
+
+## `My Useful Notes:`
+
+#### push_back 
+Adds a new element at the end of the vector, after its current last element. The content of val is copied (or moved) to the new element.
+
+This effectively increases the container size by one, which causes an automatic reallocation of the allocated storage space if -and only if- the new vector size surpasses the current vector capacity.
 
 #### To compile: (I forgot this sometime lmao)
 `g++ foo.cpp` 
@@ -35,17 +45,24 @@ https://stackoverflow.com/questions/152555/h-or-hpp-for-your-class-definitions
 
 
 #### printf format
-
-* %d integer
-* %p pointer location
-* %x hex
-* %s string
-* %lf float
-* %f float
+```
+- %d integer
+- %p pointer location
+- %x hex
+- %s string
+- %lf float
+- %f float
+```
 
 #### Using g++, you can use the -I option to specify an alternate include directory.
 
-g++ -o main -I/source/includes main.cpp
+`g++ -o main -I/source/includes main.cpp`
 
 #### Cara ngeimport file/function
 https://stackoverflow.com/questions/15891781/how-to-call-on-a-function-found-on-another-file
+
+#### Kenapa beberapa program menggunakan sync_with_stdio, cin.tie(NULL), cout.tie(NULL)
+https://stackoverflow.com/questions/31162367/significance-of-ios-basesync-with-stdiofalse-cin-tienull
+
+#### :: is the scope resolution operator.
+http://www.cplusplus.com/forum/beginner/111502/

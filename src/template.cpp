@@ -10,6 +10,16 @@ void bubbleSort(T a[], int n) {
 			swap(a[j], a[j - 1]);
 }
 
+template<typename T>
+void print(T data) {
+	cout << data << endl;
+}
+
+template<typename T, typename U>
+void max(T a, U b) {
+	cout << max(a, b) << endl;
+}
+
 int main() {
 	int a[5] = {10, 50, 30, 40, 20};
 	int n = sizeof(a) / sizeof(a[0]);
