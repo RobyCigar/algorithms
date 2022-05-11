@@ -78,7 +78,10 @@ https://stackoverflow.com/questions/9160499/go-to-back-directory-browsing-after-
 https://github.com/Optixal/neovim-init.vim
 
 #### Cara pindah panel/window
-<ctrl> + w + w
+* ctrl + w + w
+
+#### Cara menambahkan file
+Activate the NERDTree and navigate to the directory in which the new file should live. Then press m to bring up the NERDTree Filesystem Menu and choose a for "add child node". Then simply enter the file's (or directory's name) and you're done.
 
 #### How to find a word in Vi / Vim? 
 * To find a word in Vi/Vim, simply type the / or ? key, followed by the word you're searching for.
@@ -111,4 +114,19 @@ https://vi.stackexchange.com/questions/514/how-do-i-change-the-current-splits-wi
   ,fh - Help tags
   ,fc - Change colorscheme
   ,f/ - Fuzzy find current buffer
+
+#### Delete
+* `d` to delete a character
+* `dd` to delete a line
+
+#### Undo dan Redo
+* `u` undo
+* `ctrl + r` redo
+
+#### Macros di VIM
+You start recording by `q<letter>` and you can end it by typing `q` again.
+Recording is a really useful feature of Vim.
+It records everything you type. You can then replay it simply by typing `@<letter>`. Record search, movement, replacement...
+
+One of the best feature of Vim IMHO.
 
