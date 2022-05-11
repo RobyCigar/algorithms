@@ -9,6 +9,7 @@ int main(int argc, char const *argv[]) {
 
     // create suffix array
     for (int i = 0; i < input.size(); i++) suffix_array.push_back(i);
+
     // sort suffix array
     sort(suffix_array.begin(), suffix_array.end(), [&](int a, int b) {
         return input.substr(a) < input.substr(b);

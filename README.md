@@ -1,12 +1,12 @@
-# Tempatku Belajar Algorithms, Data Structure, CPP, dan Competitive Programming
+# Tempatku Belajar Algorithms, Data Structure, C++, Competitive Programming, dan tentu saja VIM
 
-## `Sumber Belajar dan Bookmark`
+## Sumber Belajar dan Bookmark
 
 * https://codeforces.com/blog/entry/57282
 * https://www.geeksforgeeks.org/how-to-prepare-for-acm-icpc/
 * https://blog.shahjalalshohag.com/topic-list/
 
-## `My Useful Notes:`
+## My Useful Notes:
 
 #### push_back 
 Adds a new element at the end of the vector, after its current last element. The content of val is copied (or moved) to the new element.
@@ -72,11 +72,43 @@ http://www.cplusplus.com/forum/beginner/111502/
 You can go back to the last buffer using :b#
 https://stackoverflow.com/questions/9160499/go-to-back-directory-browsing-after-opening-file-in-vim
 
-## Tips Memakai NVIM
+## Tips Memakai VIM
 
 #### Starter Template & Themes
 https://github.com/Optixal/neovim-init.vim
 
-#### Cara pindah window
+#### Cara pindah panel/window
 <ctrl> + w + w
+
+#### How to find a word in Vi / Vim? 
+* To find a word in Vi/Vim, simply type the / or ? key, followed by the word you're searching for.
+* Once found, you can press the n key to go directly to the next occurrence of the word.
+* Vi/Vim also allows you to launch a search on the word over which your cursor is positioned. To do this, place the cursor over the term, and then press * or # to look it up.
+
+#### Cara resize window di vim
+https://vi.stackexchange.com/questions/514/how-do-i-change-the-current-splits-width-and-height
+
+#### Core Shortcut
+    , - Map leader, nearly all my custom mappings starts with pressing the comma key
+    ,q or \\ - Toggle sidebar filetree viewer (nvim-tree.lua)
+    ,r - Refresh/source ~/.config/nvim/init.vim
+    ,t - Trim all trailing whitespaces
+    ,a - Auto align variables (vim-easy-align), eg. do ,a= while your cursor is on a bunch of variables to align their equal signs
+    ,h - Toggle rainbow parentheses highlighting (rainbow-parentheses.vim)
+    ,j - Set filetype to "journal" which makes the syntax highlighting beautiful when working on regular text files and markdown
+    ,k - Toggle coloring of hex colors
+    ,l - Toggle Limelight mode, highlight the lines near cursor only (Limelight)
+    ,, - Remove highlights (after searching with /)
+    <Tab> - Next buffer
+    <Shift-Tab> - Previous buffer
+    ,$s - New terminal in horizontal split
+    ,$v - New terminal in vertical split
+
+#### Telescope Shortcut
+  ,ff - Find files
+  ,fg - Live grep from files
+  ,fb - Buffers
+  ,fh - Help tags
+  ,fc - Change colorscheme
+  ,f/ - Fuzzy find current buffer
 
