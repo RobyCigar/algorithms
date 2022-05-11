@@ -4,6 +4,7 @@
 
 * https://codeforces.com/blog/entry/57282
 * https://www.geeksforgeeks.org/how-to-prepare-for-acm-icpc/
+* https://blog.shahjalalshohag.com/topic-list/
 
 ## `My Useful Notes:`
 
@@ -66,3 +67,16 @@ https://stackoverflow.com/questions/31162367/significance-of-ios-basesync-with-s
 
 #### :: is the scope resolution operator.
 http://www.cplusplus.com/forum/beginner/111502/
+
+#### Cara kembali ke file explorer di vim
+You can go back to the last buffer using :b#
+https://stackoverflow.com/questions/9160499/go-to-back-directory-browsing-after-opening-file-in-vim
+
+## Tips Memakai NVIM
+
+#### Starter Template & Themes
+https://github.com/Optixal/neovim-init.vim
+
+#### Cara pindah window
+<ctrl> + w + w
+
