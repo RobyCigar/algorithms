@@ -8,6 +8,10 @@
 
 ## My Useful Notes:
 
+#### Cara return array di C++
+C++ does not allow to return an entire array as an argument to a function. However, you can return a pointer to an array by specifying the array's name without an index.
+https://www.tutorialspoint.com/cplusplus/cpp_return_arrays_from_functions.htm
+
 #### push_back 
 Adds a new element at the end of the vector, after its current last element. The content of val is copied (or moved) to the new element.
 
@@ -44,16 +48,23 @@ unordered_set can be more efficient.
 #### *.hpp vs *.h
 https://stackoverflow.com/questions/152555/h-or-hpp-for-your-class-definitions 
 
+#### Mengambil satu baris input
+```
+scanf("%[^\n]%*c", s);
+```
 
 #### printf format
 ```
 - %d integer
 - %p pointer location
 - %x hex
+- %c character
 - %s string
 - %lf float
 - %f float
+- %.1f float 1 angka di belakang koma
 ```
+
 
 #### Using g++, you can use the -I option to specify an alternate include directory.
 
@@ -71,6 +82,9 @@ http://www.cplusplus.com/forum/beginner/111502/
 #### Cara kembali ke file explorer di vim
 You can go back to the last buffer using :b#
 https://stackoverflow.com/questions/9160499/go-to-back-directory-browsing-after-opening-file-in-vim
+
+#### Penjelasan tentang this
+https://www.youtube.com/watch?v=Z_hPJ_EhceI
 
 ## Tips Memakai VIM
 

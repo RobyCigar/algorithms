@@ -1,12 +1,13 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-#define sz(a) ((int)(a).size())
 
 int main(int argc, char const *argv[]) {
-    int a = 3000;
-
-    cout << sz(a) << endl;
-    
-    return 0;
+    int a[] = {1, 2, 3, 4, 5, 6};
+    int i = 0;
+    cout << a[i++] << endl;
+    cout << a[i++] << endl;
+    cout << a[i++] << endl;
+    cout << a[i++] << endl;
+    cout << a[i++] << endl;
 }
