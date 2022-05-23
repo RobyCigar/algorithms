@@ -1,3 +1,4 @@
+// -4, 3
 function khadane(arr) {
 	let currSum = 0, max = 0;
 	for(let i=0; i < arr.length; i++) {
