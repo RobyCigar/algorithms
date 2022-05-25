@@ -51,6 +51,7 @@ template < typename F, typename S >
 ostream& operator << ( ostream& os, const pair< F, S > & p ) {
     return os << "(" << p.first << ", " << p.second << ")";
 }
+
 template < typename T >
 ostream &operator << ( ostream & os, const vector< T > &v ) {
     os << "{";
@@ -62,6 +63,7 @@ ostream &operator << ( ostream & os, const vector< T > &v ) {
     }
     return os << "}";
 }
+
 template < typename T >
 ostream &operator << ( ostream & os, const set< T > &v ) {
     os << "[";
