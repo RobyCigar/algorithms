@@ -1,18 +1,17 @@
 #include <bits/stdc++.h>
 
-#define pii pair<int, int>
 #define mp make_pair
 #define pb push_back
 #define MAX 105
 
 using namespace std;
 
-vector<pii> kotak[MAX][MAX];
+vector<pair<int, int>> kotak[MAX][MAX];
 bool vis[MAX][MAX];
 int dist[MAX][MAX];
 
 void shortest(int u, int v) {
-    queue<pii> q;
+    queue<pair<int, int>> q;
 
     q.push(mp(u, v));
     vis[u][v] = true;
@@ -23,7 +22,7 @@ void shortest(int u, int v) {
 
         q.pop();
 
-        for(pii it: kotak[x][y]) {
+        for(pair<int, int> it: kotak[x][y]) {
             int i = it.first;
             int j = it.second;
             if(!vis[i][j]) {
@@ -37,23 +36,33 @@ void shortest(int u, int v) {
 
 int main(int argc, char const *argv[]) {
     int n, m, nearest=0;
-    queue<pii> out;
+    queue<pair<int, int>> out;
     cin >> n >> m;
+    // n rows
     for(int i = 0; i < n; i++) {
+        // m columns
         for(int j = 0; j < m; j++) {
             int temp;
             cin >> temp;
+            // jika terdapat tembok, maka jalan tidak dpt dilalui
             if(temp == -1) 
                 vis[i][j] = true;
+            // jika tembok atas || tembok bawah || tembok kiri || tembok kanan
             if(i == 0 || i == n-1 || j == 0 || j == m-1)
+                // jika ada jalan keluar pada sisi tembok
                 if(temp == 0)
                     out.push(mp(i, j));
+            // jika tidak batas dinding atas 
             if(i != 0)
-                kotak[i][j].pb(mp(i-1, j));
+                // masukkan jalan ke kotak
+                kotak[i][j].pb(mp(i-1, j));  
+            // jika tidak batas dinding bawah
             if(i != n-1)
                 kotak[i][j].pb(mp(i+1, j));
+            // jika tidak batas dinding kiri
             if(j != 0)
                 kotak[i][j].pb(mp(i, j-1));
+            // jika tidak batas dinding kanan
             if(j != m-1)
                 kotak[i][j].pb(mp(i, j+1));
 

@@ -16,7 +16,7 @@ typedef string str;
 #define mset(a, b) memset(a, b, sizeof(a))
 #define print(a, n) for(int _i = 0 ; _i < n ; _i++) cout << a[_i] << " "; cout << '\n';
 #define print2(a, n, m) for(int _i = 0 ; _i < n ; _i++){for(int _j = 0 ; _j < m ; _j++){cout << a[_i][_j] << " ";} cout << '\n';}
-
+#define print3(a, n, m, o) { for (int i = 0; i < n; ++i) { for (int j = 0; j < m; ++j) { for (int k = 0; k < o; ++k) { cout << "[" << i << "][" << j << "][" << k << "] = " << a[i][j][k] << endl; }}}}
 int dd[123];
 
 ll Read() {
