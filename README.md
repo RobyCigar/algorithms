@@ -86,6 +86,25 @@ https://stackoverflow.com/questions/9160499/go-to-back-directory-browsing-after-
 #### Penjelasan tentang this
 https://www.youtube.com/watch?v=Z_hPJ_EhceI
 
+
+#### Perbedaan Pair dengan Map
+* std::map<X, Y>:
+
+is an ordered structure with respect to keys (that is, when you iterate over it, keys will be always increasing).
+supports unique keys (Xs) only
+offers fast find() method (O(log n)) which finds the Key-Value pair by Key
+offers an indexing operator map[key], which is also fast
+
+* std::list<std::pair<X, Y> >:
+
+is a simple sequence of paired Xs and Ys. They remain in the order you put it in.
+can hold any number of duplicates
+finding a particular key in a list is O(N) (no special method)
+offers the splice method.
+
+
+
+
 ## Tips Memakai VIM
 
 #### Starter Template & Themes
