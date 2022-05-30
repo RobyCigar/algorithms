@@ -12,7 +12,7 @@ public:
         return s.substr(left+1, right-left-1);
     }
     
-    string longestPalindrome(string s) {
+    string longestPalindrome1(string s) {
         int n = s.size();
         if (n<=1) return s;
 
@@ -31,5 +31,31 @@ public:
         }
 
         return longest; 
+    }
+    // ====================================
+
+    bool is_palindrome(string s) {
+        string rev = s;
+        reverse(rev.begin(), rev.end());
+
+        return s == rev;
+    }
+
+    string longestPalindrome2(string s) {
+        int best_len = 0;
+        string best_s = "";
+        int n = s.length();
+
+        for(int L = 0; L < n; L++) {
+            for(int R = L; R < n; R++) {
+                int len = R - L + 1;
+                string subs = s.substr(L, len);
+                if(is_palindrome(subs) && len > best_len) {
+                    best_len = len;
+                    best_s = subs;
+                }
+            }
+        }
+        return best_s;
     }
 };
