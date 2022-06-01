@@ -163,3 +163,5 @@ It records everything you type. You can then replay it simply by typing `@<lette
 
 One of the best feature of Vim IMHO.
 
+#### Cara Rename File di VIM
+https://vi.stackexchange.com/questions/305/how-can-i-rename-the-file-im-editing
