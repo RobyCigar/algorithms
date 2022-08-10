@@ -169,3 +169,6 @@ https://vi.stackexchange.com/questions/305/how-can-i-rename-the-file-im-editing
 
 #### Cara Hapus File di VIM NERDTree
 just press d
+
+#### Cara Select All Text
+https://vi.stackexchange.com/questions/9028/what-is-the-command-for-select-all-in-vim-and-vsvim
