@@ -22,6 +22,9 @@ This effectively increases the container size by one, which causes an automatic 
 if you want to specify filename 
 `g++ -o output foo.cpp`
 
+mac m1
+clang++ foo.cpp
+
 #### Penggunaan "" beda dengan ''
 
 #### C++ nggak bisa ngeprint array tanpa loop!
