@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "vector": "cpp",
+        "iosfwd": "cpp",
+        "__hash_table": "cpp",
+        "unordered_map": "cpp"
+    }
+}
